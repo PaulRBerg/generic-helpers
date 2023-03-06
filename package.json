@@ -1,0 +1,34 @@
+{
+  "name": "generic-helpers",
+  "description": "Generic helper functions for Google Sheets",
+  "version": "1.0.0",
+  "author": {
+    "name": "Paul Razvan Berg",
+    "url": "https://github.com/PaulRBerg"
+  },
+  "bugs": {
+    "url": "https://github.com/PaulRBerg/generic-helpers/issues"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "rimraf": "^4.3.0"
+  },
+  "homepage": "https://github.com/PaulRBerg/generic-helpers#readme",
+  "keywords": [
+    "google",
+    "google-apps-script",
+    "google-sheets"
+  ],
+  "packageManager": "yarn@3.4.1",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulRBerg/generic-helpers"
+  },
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "lint": "yarn prettier:check",
+    "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
+    "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\""
+  }
+}
