@@ -19,7 +19,6 @@
     "google-apps-script",
     "google-sheets"
   ],
-  "packageManager": "yarn@3.4.1",
   "private": "true",
   "repository": {
     "type": "git",
@@ -27,7 +26,7 @@
   },
   "scripts": {
     "clean": "rimraf ./dist",
-    "lint": "yarn prettier:check",
+    "lint": "pnpm prettier:check",
     "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
     "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\""
   }
